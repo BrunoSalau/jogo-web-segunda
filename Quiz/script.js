@@ -167,7 +167,7 @@ if(numero == 0){
 };
 function proxima(){
     if(numero == 10){
-         window.location.href = "/index.html";
+         history.back();
     }
     else{
         let selecionado = document.querySelector('input[name="op"]:checked');
@@ -220,4 +220,5 @@ document.getElementById("passMusic").addEventListener("click", () => {
     index = (index + 1) % playlist.length;
     player.src = playlist[index];
     player.play();
+
 });
