@@ -108,6 +108,11 @@ function carregarPergunta(){
     document.getElementById("label3").innerHTML = p.op3;
     document.getElementById("label4").innerHTML = p.op4;
 
+    document.getElementById("label1").style = "font-family: Momo Trust Display, sans-serif;font-weight: 400;font-style: normal;"
+    document.getElementById("label2").style = "font-family: Momo Trust Display, sans-serif;font-weight: 400;font-style: normal;"
+    document.getElementById("label3").style = "font-family: Momo Trust Display, sans-serif;font-weight: 400;font-style: normal;"
+    document.getElementById("label4").style = "font-family: Momo Trust Display, sans-serif;font-weight: 400;font-style: normal;"
+
     document.getElementById("op1").value = p.pontos[0];
     document.getElementById("op2").value = p.pontos[1];
     document.getElementById("op3").value = p.pontos[2];
@@ -166,7 +171,7 @@ if(numero == 0){
     carregarPergunta();
 };
 function proxima(){
-    if(numero == 10){
+    if(numero == 10){   
          history.back();
     }
     else{
@@ -220,5 +225,4 @@ document.getElementById("passMusic").addEventListener("click", () => {
     index = (index + 1) % playlist.length;
     player.src = playlist[index];
     player.play();
-
 });
