@@ -28,3 +28,10 @@ document.getElementById("passMusic").addEventListener("click", () => {
     player.src = playlist[index];
     player.play();
 });
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var popup = new bootstrap.Modal(document.getElementById("meuPopup"));
+    popup.show();
+  });
+
